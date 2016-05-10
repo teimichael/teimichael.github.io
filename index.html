@@ -1,363 +1,59 @@
-<!doctype html>
-<html class="no-js">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="UTF-8">
     <title>NA个人学习工作室</title>
-    <link rel="stylesheet" media="all" href="styles/style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!-- JS -->
-    <script src="scripts/jquery-1.6.4.min.js"></script>
-    <script src="scripts/css3-mediaqueries.js"></script>
-    <script src="scripts/custom.js"></script>
-    <script src="scripts/tabs.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/mainstyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/headshowcomponent.css"/>
 
-    <!-- Tweet -->
-    <link rel="stylesheet" href="styles/jquery.tweet.css" media="all"/>
-    <script src="scripts/tweet/jquery.tweet.js"></script>
-    <!-- ENDS Tweet -->
-
-    <!-- superfish -->
-    <link rel="stylesheet" media="screen" href="styles/superfish.css"/>
-    <script src="scripts/superfish-1.4.8/js/hoverIntent.js"></script>
-    <script src="scripts/superfish-1.4.8/js/superfish.js"></script>
-    <script src="scripts/superfish-1.4.8/js/supersubs.js"></script>
-    <!-- ENDS superfish -->
-
-    <!-- prettyPhoto -->
-    <script src="scripts/prettyPhoto/js/jquery.prettyPhoto.js"></script>
-    <link rel="stylesheet" href="scripts/prettyPhoto/css/prettyPhoto.css" media="screen"/>
-    <!-- ENDS prettyPhoto -->
-
-    <!-- poshytip -->
-    <link rel="stylesheet" href="scripts/poshytip-1.1/src/tip-twitter/tip-twitter.css"/>
-    <link rel="stylesheet" href="scripts/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css"/>
-    <script src="scripts/poshytip-1.1/src/jquery.poshytip.min.js"></script>
-    <!-- ENDS poshytip -->
-
-
-    <!-- Flex Slider -->
-    <link rel="stylesheet" href="styles/flexslider.css">
-    <script src="scripts/jquery.flexslider-min.js"></script>
-    <!-- ENDS Flex Slider -->
-
-    <!-- Masonry -->
-    <script src="scripts/masonry.min.js"></script>
-    <script src="scripts/imagesloaded.js"></script>
-    <!-- ENDS Masonry -->
-
-    <!-- Less framework -->
-    <link rel="stylesheet" media="all" href="styles/lessframework.css"/>
-
-    <!-- modernizr -->
-    <script src="scripts/modernizr.js"></script>
-
-    <!-- SKIN -->
-    <link rel="stylesheet" media="all" href="styles/skin.css"/>
+    <script src="scripts/jquery-2.2.2.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
 
 </head>
-
-<body lang="en">
-
-<header>
-
-    <div class="wrapper clearfix">
-        <div id="logo">
-            <a href="index.html"><img src="img/logo.png" alt="NA Personal Learning Studio"></a>
-        </div>
-        <!-- nav -->
-        <ul id="nav" class="sf-menu">
-            <li class="current-menu-item"><a href="index.html">HOME</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="page.html">ABOUT</a>
-                <ul>
-                    <li><a href="page-elements.html">Elements</a></li>
-                    <li><a href="page-icons.html">Icons</a></li>
-                    <li><a href="page-typography.html">Typography</a></li>
-                </ul>
-            </li>
-            <li><a href="portfolio.html">WORK</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="#/blog/downloads/simpler-template">DOWNLOAD NOW</a></li>
-        </ul>
-        <!-- ends nav -->
-
-
-        <!-- comboNav -->
-        <select id="comboNav">
-            <option value="index.html" selected="selected">HOME</option>
-            <option value="blog.html">BLOG</option>
-            <option value="page.html">ABOUT</option>
-            <option value="page-elements.html">- Elements -</option>
-            <option value="page-icons.html">- Icons -</option>
-            <option value="page-typography.html">- Typography -</option>
-            <option value="portfolio.html">WORK</option>
-            <option value="#/blog/downloads/simpler-template">DOWNLOAD NOW</option>
-        </select>
-        <!-- comboNav -->
-
-        <!-- slider holder -->
-        <div class="clearfix"></div>
-        <div id="slider-holder" class="clearfix">
-
-            <!-- slider -->
-            <div class="flexslider home-slider">
-                <ul class="slides">
-                    <li>
-                        <img src="img/slides/01.jpg" alt="alt text"/>
-                    </li>
-                    <li>
-                        <img src="img/slides/02.jpg" alt="alt text"/>
-                        <p class="flex-caption">Pellentesque habitant morbi feugiat vitae.</p>
-                    </li>
-                    <li>
-                        <img src="img/slides/03.jpg" alt="alt text"/>
-                    </li>
-                </ul>
-            </div>
-            <!-- ENDS slider -->
-
-            <div class="home-slider-clearfix "></div>
-
-            <!-- Headline -->
-            <div id="headline">
-                <h4>HELLO, I AM FREE</h4>
-                <p class="headline-text">Simpler template is a totally FREE template for personal and commercial
-                    projects.</p>
-                <p class="headline-text">If you are looking for a WordPress version try the <a
-                        href="http://www.cssmoban.com/" class="read-more">aaa</a></p>
-
-            </div>
-            <!-- ENDS headline -->
-
-
-        </div>
-        <!-- ENDS slider holder -->
-
-    </div>
-</header>
-
-
-<div class="copyrights">Collect from <a href="http://www.cssmoban.com/">bbb</a></div>
-
-<!-- MAIN -->
-<div id="main">
-    <div class="wrapper clearfix">
-
-
-        <!-- home-block -->
-        <div class="home-block clearfix">
-            <h1 class="home-headline">FEATURED WORK </h1>
-
-            <!-- thumbs -->
-            <div class="clearfix">
-
-                <figure>
-                    <a href="single.html" class="thumb"><img src="img/dummies/featured-1.jpg" alt="Alt text"/></a>
-                    <figcaption>
-                        <strong>Pellentesque habitant morbi</strong>
-                        <span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</span>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <a href="single.html" class="thumb"><img src="img/dummies/featured-2.jpg" alt="Alt text"/></a>
-                    <figcaption>
-                        <strong>Pellentesque habitant morbi</strong>
-                        <span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</span>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <a href="single.html" class="thumb"><img src="img/dummies/featured-3.jpg" alt="Alt text"/></a>
-                    <figcaption>
-                        <strong>Pellentesque habitant morbi</strong>
-                        <span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</span>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <a href="single.html" class="thumb"><img src="img/dummies/featured-1.jpg" alt="Alt text"/></a>
-                    <figcaption>
-                        <strong>Pellentesque habitant morbi</strong>
-                        <span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</span>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <a href="single.html" class="thumb"><img src="img/dummies/featured-3.jpg" alt="Alt text"/></a>
-                    <figcaption>
-                        <strong>Pellentesque habitant morbi</strong>
-                        <span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</span>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <a href="single.html" class="thumb"><img src="img/dummies/featured-2.jpg" alt="Alt text"/></a>
-                    <figcaption>
-                        <strong>Pellentesque habitant morbi</strong>
-                        <span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</span>
-                    </figcaption>
-                </figure>
-
-            </div>
-            <!-- ENDS thumbs -->
-
-            <a href="work.html" class="theme-link-button">See All Work</a>
-
-        </div>
-        <!-- ENDS home-block -->
-
-
-        <!-- additional blocks -->
-        <div class="home-add clearfix">
-
-            <!-- left -->
-            <div class="left-home-block home-posts">
-                <h4 class="heading">FROM THE BLOG</h4>
-                <article class="format-standard">
-                    <div class="entry-date">
-                        <div class="number">23</div>
-                        <div class="month">JAN</div>
-                        <div class="year">2011</div>
-                        <em></em></div>
-                    <div class="post-heading">
-                        <h4><a href="single.html">Lorem ipsum dolor </a></h4>
-                    </div>
-                    <div class="excerpt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae.
-                    </div>
-                </article>
-
-                <article class="format-standard">
-                    <div class="entry-date">
-                        <div class="number">23</div>
-                        <div class="month">JAN</div>
-                        <div class="year">2011</div>
-                        <em></em></div>
-                    <div class="post-heading">
-                        <h4><a href="single.html">Lorem ipsum dolor </a></h4>
-                    </div>
-                    <div class="excerpt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae.
-                    </div>
-                </article>
-
-                <article class="format-standard">
-                    <div class="entry-date">
-                        <div class="number">23</div>
-                        <div class="month">JAN</div>
-                        <div class="year">2011</div>
-                        <em></em></div>
-                    <div class="post-heading">
-                        <h4><a href="single.html">Lorem ipsum dolor </a></h4>
-                    </div>
-                    <div class="excerpt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae.
-                    </div>
-                </article>
-
-                <article class="format-standard">
-                    <div class="entry-date">
-                        <div class="number">23</div>
-                        <div class="month">JAN</div>
-                        <div class="year">2011</div>
-                        <em></em></div>
-                    <div class="post-heading">
-                        <h4><a href="single.html">Lorem ipsum dolor </a></h4>
-                    </div>
-                    <div class="excerpt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Vestibulum tortor quam, feugiat vitae.
-                    </div>
-                </article>
-
-
-            </div>
-            <!-- ENDS left -->
-
-            <!-- right -->
-            <div class="right-home-block">
-
-
-                <h4 class="heading">CLIENTS</h4>
-
-                <!-- logos -->
-                <ul class="clients-logos clearfix">
-                    <li><a href="#"><img src="img/dummies/logo1.png" alt="logo"/></a></li>
-                    <li><a href="#"><img src="img/dummies/logo2.png" alt="logo"/></a></li>
-                    <li><a href="#"><img src="img/dummies/logo3.png" alt="logo"/></a></li>
-                    <li><a href="#"><img src="img/dummies/logo4.png" alt="logo"/></a></li>
-                    <li><a href="#"><img src="img/dummies/logo5.png" alt="logo"/></a></li>
-                    <li><a href="#"><img src="img/dummies/logo6.png" alt="logo"/></a></li>
-                </ul>
-                <!-- ENDS logos -->
-
-
-                <h4 class="heading">TESTIMONIALS</h4>
-
-                <!-- testimonial slider -->
-                <div class="flexslider testimonial-slider">
-                    <ul class="slides">
-                        <li>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.
-                            <div class="client-name">- Luis Zuno, Webdesigner</div>
-                        </li>
-                        <li>
-                            at vitae, ultricies eget, tempor sit amet, ante. Donec
-                            <div class="client-name">- Luis Zuno, Webdesigner</div>
-                        </li>
-
-                        <li>
-                            Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
-                            commodo vitae, ornare sit amet, wisi.
-                            <div class="client-name">- Luis Zuno, Webdesigner</div>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- ENDS testimonial slider -->
-
-
-            </div>
-            <!-- ENDS right -->
-
-        </div>
-        <!-- ENDS additional blocks -->
-
-        <!-- Fold image -->
-        <div id="fold"></div>
-    </div>
-
+<body>
+<div id="large-header" class="large-header">
+    <canvas id="demo-canvas"></canvas>
 </div>
-<!-- ENDS MAIN -->
-
-
-<footer>
-
-    <div class="wrapper clearfix">
-
-
-        <!-- bottom -->
-        <div class="footer-bottom">
-            <div class="left">Made by <a href="#" title="NA Personal Learning Studio">NA PLS</a></div>
-            <div class="right">
-                <ul id="social-bar">
-                    <li><a href="#" title="Become a fan" class="poshytip"><img src="img/social/facebook.png"
-                                                                               alt="Facebook"/></a></li>
-                    <li><a href="#" title="Follow my tweets" class="poshytip"><img src="img/social/twitter.png"
-                                                                                   alt="twitter"/></a></li>
-                    <li><a href="#" title="Add to the circle" class="poshytip"><img src="img/social/plus.png"
-                                                                                    alt="Google plus"/></a></li>
-                </ul>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">主页</a></li>
+                <li><a href="#">APP开发</a></li>
+                <li><a href="#">视频制作</a></li>
+                <li><a href="#">个人博客</a></li>
+                <li><a href="#">联系方式</a></li>
+            </ul>
         </div>
-        <!-- ENDS bottom -->
-
     </div>
-</footer>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="slider">
+            <img src="images/mylogo3.jpg">
+            <img src="images/mylogo2.jpg">
+            <img src="images/kana.jpg">
+            <img src="images/NAWeather.jpg">
+            <img src="images/mylogo1.jpg">
+        </div>
+    </div>
+</div>
 
+<div class="row panel-footer">
+    <div class="col-md-12">
+        <div>Made by <a title="NA Personal Learning Studio" href="#">NA PLS</a></div>
+    </div>
+</div>
+
+<script src="scripts/mainscript.js"></script>
+<script src="scripts/effects.js"></script>
+
+<script src="scripts/headershow/TweenLite.min.js"></script>
+<script src="scripts/headershow/EasePack.min.js"></script>
+<script src="scripts/headershow/rAF.js"></script>
+<script src="scripts/headershow/demo-1.js"></script>
+<script src="scripts/jSlides.js"></script>
 </body>
-
 </html>
