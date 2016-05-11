@@ -1,0 +1,14 @@
+.nav {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.panel-footer{
+    height:100px;
+    margin-top: 30px;
+    text-align: center;
+}
+abbr{
+    font-weight:bold;
+}

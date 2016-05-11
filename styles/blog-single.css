@@ -1,0 +1,10 @@
+div .box-shadow{
+    border: 1px solid gray;
+    -webkit-box-shadow: 3px 3px 3px;
+    -moz-box-shadow: 3px 3px 3px;
+    box-shadow: 3px 3px 3px;
+}
+
+div .border-right{
+    border-right: 1px solid gray;
+}
