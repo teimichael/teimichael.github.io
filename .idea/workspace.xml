@@ -2,34 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="852fcef2-95ea-40be-8d76-61f9a2cb94d5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/MyBlog.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/styles/mainstyle.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/styles/polyTextarea.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/mainstyle.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/polyTextarea.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/images/NAWeather.jpg" afterPath="$PROJECT_DIR$/_site/images/NAWeather.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/images/header-bg.jpg" afterPath="$PROJECT_DIR$/_site/images/header-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/images/kana.jpg" afterPath="$PROJECT_DIR$/_site/images/kana.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/images/mylogo1.jpg" afterPath="$PROJECT_DIR$/_site/images/mylogo1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/images/mylogo2.jpg" afterPath="$PROJECT_DIR$/_site/images/mylogo2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/images/mylogo3.jpg" afterPath="$PROJECT_DIR$/_site/images/mylogo3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/NAWeather.jpg" afterPath="$PROJECT_DIR$/images/NAWeather.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/header-bg.jpg" afterPath="$PROJECT_DIR$/images/header-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/kana.jpg" afterPath="$PROJECT_DIR$/images/kana.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mylogo1.jpg" afterPath="$PROJECT_DIR$/images/mylogo1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mylogo2.jpg" afterPath="$PROJECT_DIR$/images/mylogo2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mylogo3.jpg" afterPath="$PROJECT_DIR$/images/mylogo3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_layouts/blog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/2016/05/10/hello-world.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/scripts/mainscript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/mainscript.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/blog.html" afterPath="$PROJECT_DIR$/_layouts/blog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/index-custom.html" afterPath="$PROJECT_DIR$/_layouts/index-custom.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-05-10-hello-world.html" afterPath="$PROJECT_DIR$/_posts/2016-05-10-hello-world.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/05/10/hello-world.html" afterPath="$PROJECT_DIR$/_site/2016/05/10/hello-world.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/scripts/photoslide/effects.js" afterPath="$PROJECT_DIR$/_site/scripts/photoslide/effects.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/photoslide/effects.js" afterPath="$PROJECT_DIR$/scripts/photoslide/effects.js" />
     </list>
     <ignored path="MyBlogDev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +35,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="189">
+              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -109,6 +91,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -129,8 +113,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,12 +192,21 @@
       <option name="presentableId" value="Default" />
       <updated>1462933111643</updated>
       <workItem from="1462933113176" duration="6127000" />
-      <workItem from="1462941977527" duration="11000" />
+      <workItem from="1462941977527" duration="110000" />
+      <workItem from="1462949907060" duration="10000" />
     </task>
+    <task id="LOCAL-00001" summary="upgrade homepage">
+      <created>1462942020581</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1462942020581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6138000" />
+    <option name="totallyTimeSpent" value="6247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -242,11 +233,23 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="upgrade homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade homepage" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/styles/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -260,8 +263,8 @@
     <entry file="file://$PROJECT_DIR$/blog.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="189">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
           <folding />
         </state>
       </provider>
