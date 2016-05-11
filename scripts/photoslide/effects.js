@@ -11,8 +11,8 @@ $(function(){
         img4: {h2:'', h3:''},
         img5: {h2:'', h3:''},
         autoplay: false,
-        width: 1280,
-        height: 720
+        width: 800,
+        height: 450
 
     });
 });
