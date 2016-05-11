@@ -1,59 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>NA个人学习工作室</title>
-
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/mainstyle.css">
-    <link rel="stylesheet" type="text/css" href="styles/headshowcomponent.css"/>
-
-    <script src="scripts/jquery-2.2.2.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-
-</head>
-<body>
-<div id="large-header" class="large-header">
-    <canvas id="demo-canvas"></canvas>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <ul class="nav nav-pills">
-                <li class="active"><a href="#">主页</a></li>
-                <li><a href="#">APP开发</a></li>
-                <li><a href="#">视频制作</a></li>
-                <li><a href="#">个人博客</a></li>
-                <li><a href="#">联系方式</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <div class="slider">
-            <img src="images/mylogo3.jpg">
-            <img src="images/mylogo2.jpg">
-            <img src="images/kana.jpg">
-            <img src="images/NAWeather.jpg">
-            <img src="images/mylogo1.jpg">
-        </div>
-    </div>
-</div>
-
-<div class="row panel-footer">
-    <div class="col-md-12">
-        <div>Made by <a title="NA Personal Learning Studio" href="#">NA PLS</a></div>
-    </div>
-</div>
-
-<script src="scripts/mainscript.js"></script>
-<script src="scripts/effects.js"></script>
-
-<script src="scripts/headershow/TweenLite.min.js"></script>
-<script src="scripts/headershow/EasePack.min.js"></script>
-<script src="scripts/headershow/rAF.js"></script>
-<script src="scripts/headershow/demo-1.js"></script>
-<script src="scripts/jSlides.js"></script>
-</body>
-</html>
+---
+layout: pretty
+title: 我的Blog
+---
+<h2>{{ page.title }}</h2>
+<p>最新文章</p>
+<ul>
+{% for post in site.posts %}
+<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
