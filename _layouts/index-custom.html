@@ -35,7 +35,14 @@
             <div class="col-md-3 col-md-offset-2">
                 <div class="guide">
                     <h3 id="backfromblog">最新文章</h3>
-                    {{ content }}
+                    <ul>
+                        {% for post in site.posts %}
+                        <li>{{ post.date | date:"%d/%m/%Y" }}
+                            <br>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
             <div class="col-md-3">
