@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <title>NA Personal Learning Studio</title>
 
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/indexstyle.css">
     <link rel="stylesheet" type="text/css" href="styles/headshowcomponent.css"/>
 
     <script src="scripts/jquery-2.2.2.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="styles/indexstyle.css">
 </head>
 <body>
-<div id="large-header" class="large-header">
+<div id="large-header" class="large-header index-page">
     <canvas id="demo-canvas"></canvas>
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-4">
-            <ul class="nav nav-pills">
-                <li class="active"><a href="#">主页</a></li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">软件展示</a></li>
-                <li><a href="#">视频展示</a></li>
-            </ul>
+<div class="container-fluid index-page">
+
+    <div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-4">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#">主页</a></li>
+                    <li id="blog"><a href="blog-page.html">博客</a></li>
+                    <li><a href="#">软件展示</a></li>
+                    <li><a href="#">视频展示</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-2">
+                <div class="guide">
+                    <h3 id="backfromblog">最新文章</h3>
+                    {{ content }}
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="slider">
+                    <img src="images/mylogo3.jpg">
+                    <img src="images/mylogo2.jpg">
+                    <img src="images/kana.jpg">
+                    <img src="images/NAWeather.jpg">
+                    <img src="images/mylogo1.jpg">
+                </div>
+            </div>
         </div>
     </div>
 
-<div class="row">
-    <div class="col-md-3 col-md-offset-2">
-        <div class="guide">
-            <h3 id="backfromblog">最新文章</h3>
-            {{ content }}
-        </div>
+    <div class="row panel-footer">
+        <span>Author: <abbr title="丁晔澎">Michael Tei</abbr></span><br>
+        <span>Email: <strong>neveragain1995@163.com</strong></span><br><br>
+        <span>Made by <abbr title="NA Personal Learning Studio" href="#">NA PLS</abbr></span>
     </div>
-    <div class="col-md-3">
-        <div class="slider">
-            <img src="images/mylogo3.jpg">
-            <img src="images/mylogo2.jpg">
-            <img src="images/kana.jpg">
-            <img src="images/NAWeather.jpg">
-            <img src="images/mylogo1.jpg">
-        </div>
-    </div>
-</div>
-
-<div class="row panel-footer">
-    <span>Author: <abbr title="丁晔澎">Michael Tei</abbr></span><br>
-    <span>Email: <strong>neveragain1995@163.com</strong></span><br><br>
-    <span>Made by <abbr title="NA Personal Learning Studio" href="#">NA PLS</abbr></span>
-</div>
 
 </div>
 

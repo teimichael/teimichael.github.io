@@ -1,68 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8"/>
     <title>{{ page.title }}-NA PLS的博客</title>
-    <link rel="stylesheet" href="../../../../styles/bootstrap.css">
+
+    <link rel="stylesheet" media="all" href="../../../../styles/blog/style.css"/>
     <link rel="stylesheet" href="../../../../styles/common.css">
-    <link rel="stylesheet" href="../../../../styles/blog-single.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- JS -->
     <script src="../../../../scripts/jquery-2.2.2.min.js"></script>
-    <script src="../../../../scripts/bootstrap.min.js"></script>
+    <script src="../../../../scripts/blog/css3-mediaqueries.js"></script>
+    <script src="../../../../scripts/blog/custom.js"></script>
+
+    <!-- Masonry -->
+    <script src="../../../../scripts/blog/masonry.min.js"></script>
+    <!-- ENDS Masonry -->
+
+    <!-- Less framework -->
+    <link rel="stylesheet" media="all" href="../../../../styles/blog/lessframework.css"/>
+
+    <!-- modernizr -->
+    <script src="../../../../scripts/blog/modernizr.js"></script>
+
+    <!-- SKIN -->
+    <link rel="stylesheet" media="all" href="../../../../styles/blog/skin.css"/>
+
 </head>
+
 <body>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-4">
-            <ul class="nav nav-pills">
-                <li><a href="../../../../index.html">主页</a></li>
-                <li class="active"><a href="#">博客</a></li>
-                <li><a href="#">软件展示</a></li>
-                <li><a href="#">视频展示</a></li>
+<header>
+    <div class="wrapper clearfix">
+
+        <div id="logo">
+            <img class="pop_ctrl" src="../../../../images/blog/logo.png" alt="NA PLS">
+            <ul>
+                <li>
+                    <a href="../../../../index.html" style="display:block;">
+                        <div><img src="../../../../images/blog/home.png"></div>
+                        <div>首页</div>
+                    </a>
+                </li>
+                <li>
+                    <div><img src="../../../../images/blog/S_T.png"></div>
+                    <div>软件</div>
+                </li>
+                <li>
+                    <div><img src="../../../../images/blog/humanities.png"></div>
+                    <div>视频</div>
+                </li>
             </ul>
         </div>
+
     </div>
+</header>
 
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2 box-shadow">
-            <div class="col-md-9 border-right">
-                <article>
-                    <header>
-                        <h3>{{ page.title }}</h3>
-                        <span>{{ page.date | date: '%Y-%m-%d' }}</span>
-                    </header>
-                    <section>
-                        {{ content }}
-                    </section>
-                    <footer>
-                        <a href="../../../../index.html#backfromblog">返回首页</a>
-                    </footer>
-                </article>
+<!-- MAIN -->
+<div id="main">
+    <div class="wrapper clearfix">
 
-            </div>
-            <div class="col-md-3">
-                <!--<ul>-->
-                    <!--{% for post in site.posts %}-->
-                    <!--<li>-->
-                        <!--<span>{{ post.date | date_to_string }}</span>-->
-                        <!--<span><a href="{{ post.url }}">{{ post.title }}</a></span>-->
-                    <!--</li>-->
-                    <!--{% endfor %}-->
-                <!--</ul>-->
-                {% for category in site.categories %}
-                <h5>{{ category | first }}</h5>
-                </span>{{ category | last | size }}</span>
-                <ul class="arc-list">
-                    {% for post in category.last %}
-                    <li>{{ post.date | date: '%Y-%m-%d'}} | <a href="{{ post.url }}">{{ post.title }}</a></li>
-                    {% endfor %}
-                </ul>
-                {% endfor %}
-            </div>
+        <!-- masthead -->
+        <div class="masthead clearfix">
+            <h1>{{ page.title }}</h1><span class="subheading">{{page.category-cn}}</span>
+        </div>
+        <div class='mh-div'></div>
+        <!-- ENDS masthead -->
+
+        <!-- posts list -->
+        <div id="posts-list" class="single clearfix">
+
+            <article class="format-standard">
+                <div class="entry-date">
+                    <div class="number">{{page.day}}</div>
+                    <div class="month">{{page.month}}</div>
+                    <div class="year">{{page.year}}</div>
+                </div>
+
+                <div>
+                    {{content}}
+                </div>
+
+            </article>
 
         </div>
-    </div>
-</div>
+        <!-- ENDS posts list -->
 
-<script src="../../../../scripts/commonscript.js"></script>
+        <!-- sidebar -->
+        <aside id="sidebar">
+
+            <ul>
+                <li class="block"><h3>Free you heart.</h3></li>
+                <li class="block">
+                    <h4>分类</h4>
+                    {% for category in site.categories %}
+                    <h5>{{ category | first }}</h5>
+                    <ul>
+                        {% for post in category.last %}
+                        <li class="cat-item">{{ post.date | date: '%Y-%m-%d'}}<span class="divide-sign">|</span><a
+                                href="{{ post.url }}" title="{{ post.url }}">{{ post.title }}
+                            <span class="divide-sign">|</span></span class="post-counter">{{ category | last | size
+                            }}</span></a></li>
+                        {% endfor %}
+                    </ul>
+                    {% endfor %}
+
+                </li>
+            </ul>
+
+            <em id="corner"></em>
+        </aside>
+        <!-- ENDS sidebar -->
+
+        <!-- Fold image -->
+        <div id="fold"></div>
+    </div>
+
+</div>
+<!-- ENDS MAIN -->
+
+<footer>
+
+    <div class="wrapper clearfix">
+        <!-- bottom -->
+        <div class="footer-bottom">
+            <span>Author: <abbr title="丁晔澎">Michael Tei</abbr></span><br>
+            <span>Email: <strong>neveragain1995@163.com</strong></span><br><br>
+            <span>Made by <abbr title="NA Personal Learning Studio" href="#">NA PLS</abbr></span>
+            <!-- ENDS bottom -->
+        </div>
+    </div>
+</footer>
+<script src="../../../../scripts/blog/jquery.popmenu.min.js"></script>
 </body>
+
 </html>
