@@ -71,6 +71,13 @@ jQuery(document).ready(function ($) {
         $('#logo').popmenu();
     });
     
+    $('#go-home-page').click(function () {
+        location.href = 'index.html';
+    });
+    
+    $('#go-home-single').click(function () {
+        location.href='../../../../index.html'
+    });
 //close			
 });
 
